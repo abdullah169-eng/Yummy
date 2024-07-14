@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-black position-relative">
+    <header class="position-absolute z-3">
+      <!-- Side-Bar -->
+      <aside
+        id="sideBar"
+        class="vh-100 bg-black position-fixed top-0 start-0 d-flex flex-column justify-content-between"
+      >
+        <div class="d-flex flex-column p-4 overflow-hidden">
+          <div class="ele-up">
+            <h6 id="search" class="text-white py-2">Search</h6>
+            <h6 id="category" class="text-white py-2">Categories</h6>
+            <h6 id="area" class="text-white py-2">Area</h6>
+            <h6 id="ingredients" class="text-white py-2">Ingredients</h6>
+            <h6 id="contact" class="text-white py-2">Contact Us</h6>
+          </div>
+        </div>
+        <div class="text-white p-4 mt-auto">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+          <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+        </div>
+        <div></div>
+      </aside>
+      <!-- Nav -->
+      <nav
+        class="bg-white text-black vh-100 w-10 py-3 position-fixed d-flex flex-column justify-content-between align-items-center"
+      >
+        <div>
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div>
+          <i
+            id="open"
+            class="fa-solid open-close-icon fa-align-justify fs-2"
+          ></i>
+          <i id="close" class="fa-solid fa-xmark fs-1 d-none"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Loading -->
+    <div
+      id="loading"
+      class="d-none vh-100 m-0 p-0 position-absolute start-0 end-0 d-flex align-items-center justify-content-center bg-black z-3"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <!-- main -->
+    <main>
+      <!-- Display Data -->
+      <section id="dataCon" class="container-md px-3 py-5 d-block">
+        <!-- Search Inputs -->
+        <article
+          id="searchCon"
+          class="row g-3 w-75 mx-auto mb-5 d-none position-relative z-2"
+        >
+          <div class="col-md-6">
+            <input
+              type="text"
+              placeholder="Search By Name"
+              class="form-control bg-transparent text-white"
+              id="nameInput"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              maxlength="1"
+              placeholder="Search By First Letter"
+              class="form-control bg-transparent text-white"
+              id="letterInput"
+            />
+          </div>
+        </article>
+        <article id="myRow" class="row g-4"></article>
+        <article id="myRow1" class="row g-4 mt-3"></article>
+        <article id="myRow2" class="row g-4 mt-3"></article>
+        <article id="myRow3" class="row g-4 mt-3"></article>
+        <article id="myRow4"></article>
+      </section>
+      <!-- Display Details -->
+      <section id="detailCon" class="container-md px-3 py-5 d-none">
+        <i
+          id="exitDetails"
+          class="fa-solid fa-xmark fs-1 text-white position-absolute top-0 end-0 m-4"
+        ></i>
+        <article id="myDetails" class="row g-4 mt-2"></article>
+      </section>
+    </main>
+    <!-- JS File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

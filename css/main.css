@@ -1,0 +1,57 @@
+i,
+h6,
+.point,
+.par-move {
+  cursor: pointer;
+}
+input::placeholder {
+  color: gray !important;
+}
+@media screen and (max-width: 768px) {
+  #dataCon,
+  #detailCon {
+    width: 90%;
+    position: relative;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #dataCon,
+  #detailCon {
+    width: 85%;
+    left: 8%;
+    padding-block: 15px !important;
+  }
+  #detailCon {
+    padding-block: 35px !important;
+  }
+}
+/* Side-Bar */
+#sideBar {
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ele-up h6 {
+  position: relative;
+  top: 120%;
+  left: -100%;
+}
+/* Nav */
+.w-10 {
+  width: 70px;
+}
+img[alt="logo"] {
+  height: 60px;
+  width: 50px;
+}
+/* Display Data */
+.move {
+  background-color: #f9f6f6ca;
+  transform: translateY(110%);
+  transition: all 0.5s ease;
+}
+.par-move:hover .move {
+  transform: translateY(0%);
+  opacity: 1;
+}
